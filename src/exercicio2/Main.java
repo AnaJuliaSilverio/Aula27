@@ -8,11 +8,11 @@ public class Main {
 
         List<Forma> formasGeometricas = new ArrayList<>();
 
-        Circulo circulo = new Circulo(6);
-        Quadrado quadrado = new Quadrado(8);
-        Retangulo retangulo = new Retangulo(9,8);
-        Circulo circulo2 = new Circulo(2);
-        Quadrado quadrado2 = new Quadrado(4);
+        Forma circulo = new Circulo(6);
+        Forma quadrado = new Quadrado(8);
+        Forma retangulo = new Retangulo(9,8);
+        Forma circulo2 = new Circulo(2);
+        Forma quadrado2 = new Quadrado(4);
 
 
         formasGeometricas.add(circulo);

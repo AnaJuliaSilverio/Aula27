@@ -7,14 +7,14 @@ import java.util.Scanner;
 public class Loja {
     public static void main(String[] args) {
         List<Produtos> items =new ArrayList<>();
-        Cds cd1 = new Cds("Perfil",30,"1457951-785",10);
-        Dvds dvds = new Dvds("Crepusculo",45,"157894-455",120);
-        Livros livro1 = new Livros("Os 7 maridos de Evelyn Hugo",35.54,"Taylor Jenkins Reid","478894-455");
-        Cds cd2 = new Cds("Flower Boy",92.90,"1453331-785",7);
+        Produtos cd1 = new Cds("Perfil",30,"1457951-785",10);
+        Produtos dvds = new Dvds("Crepusculo",45,"157894-455",120);
+        Produtos livro1 = new Livros("Os 7 maridos de Evelyn Hugo",35.54,"Taylor Jenkins Reid","478894-455");
+        Produtos cd2 = new Cds("Flower Boy",92.90,"1453331-785",7);
 
-        Livros livro2 = new Livros("O jardim das borboletas:",47.40," Dot Hutchison","166694-455");
-        Livros livro3 = new Livros("O jardim das borboletas:",47.40," Dot Hutchison","166694-455");
-        Livros livro4 = new Livros("O jardim das borboletas:",47.40," Dot Hutchison","166694-457");
+        Produtos livro2 = new Livros("O jardim das borboletas:",47.40," Dot Hutchison","166694-455");
+        Produtos livro3 = new Livros("O jardim das borboletas:",47.40," Dot Hutchison","166694-455");
+        Produtos livro4 = new Livros("O jardim das borboletas:",47.40," Dot Hutchison","166694-457");
 
         items.add(cd1);
         items.add(dvds);
