@@ -10,7 +10,7 @@ public class Loja {
         Produtos cd1 = new Cds("Perfil",30,"1457951-785",10);
         Produtos dvds = new Dvds("Crepusculo",45,"157894-455",120);
         Produtos livro1 = new Livros("Os 7 maridos de Evelyn Hugo",35.54,"Taylor Jenkins Reid","478894-455");
-        Produtos cd2 = new Cds("Flower Boy",92.90,"1453331-785",7);
+        Produtos cd2 = new Cds("Flower Boy",92.90,"1457951-785",7);
 
         Produtos livro2 = new Livros("O jardim das borboletas:",47.40," Dot Hutchison","166694-455");
         Produtos livro3 = new Livros("O jardim das borboletas:",47.40," Dot Hutchison","166694-455");
@@ -24,10 +24,19 @@ public class Loja {
         items.add(livro3);
         items.add(livro4);
 
+        for (Produtos p:items) {
+            System.out.println(p.mostrarDethalesDoItem());
+            System.out.println();
+        }
+
         System.out.println(buscaProduto(items));
 
-        for (int i = 1; i < items.size(); i++) {
-            if (items.get(i).equals(items.get(i-1))) System.out.println("Os produtos "+ items.get(i).getNome()+" possuem código de barra iguais");
+       for (int i = 0; i < items.size(); i++) {
+            Produtos produto = items.get(i);
+            for (int j = i+1; j < items.size(); j++) {
+                Produtos produto1 = items.get(j);
+                if (produto.equals(produto1)) System.out.println("Os produtos "+ items.get(i).getNome()+" possuem código de barra iguais");
+            }
         }
 
     }
